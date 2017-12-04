@@ -157,7 +157,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<h3 style="text-align: left;">COURSES</h3>
 		<div class="col-md-4 eve-agile e1">
 			<div class="eve-sub1">
-				<a href="#" data-toggle="modal" data-target="#myModal5"><img src="images/e2.jpg" alt="image"></a>
+				<a href="#" data-toggle="modal" data-target="#myModal5"><img src="<?php echo base_url() ?>assets/images/e2.jpg" alt="image"></a>
 			<h4><a href="#" data-toggle="modal" data-target="#myModal5">Educational</a></h4>
 				<h6>By an <a href="#">admin</a>, Oct-2016</h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
@@ -175,7 +175,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</div>
 		<div class="col-md-4 eve-agile e2">
 			<div class="eve-sub1">
-				<a href="#" data-toggle="modal" data-target="#myModal6"><img src="images/e1.jpg" alt="image"></a>
+				<a href="#" data-toggle="modal" data-target="#myModal6"><img src="<?php echo base_url() ?>assets/images/e1.jpg" alt="image"></a>
 				<h4><a href="#" data-toggle="modal" data-target="#myModal6">Educational</a></h4>
 				<h6>By an <a href="#">admin</a>, Oct-2016</h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
@@ -193,7 +193,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</div>
 		<div class="col-md-4 eve-agile e3">
 			<div class="eve-sub1">
-				<a href="#" data-toggle="modal" data-target="#myModal7"><img src="images/e3.jpg" alt="image"></a>
+				<a href="#" data-toggle="modal" data-target="#myModal7"><img src="<?php echo base_url() ?>assets/images/e3.jpg" alt="image"></a>
 				<h4><a href="#" data-toggle="modal" data-target="#myModal7">Educational</a></h4>
 				<h6>By an <a href="#">admin</a>, Oct-2016</h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
@@ -211,7 +211,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</div>
 		<div class="col-md-4 eve-agile e1">
 			<div class="eve-sub1">
-				<a href="#" data-toggle="modal" data-target="#myModal5"><img src="images/e2.jpg" alt="image"></a>
+				<a href="#" data-toggle="modal" data-target="#myModal5"><img src="<?php echo base_url() ?>assets/images/e2.jpg" alt="image"></a>
 			<h4><a href="#" data-toggle="modal" data-target="#myModal5">Educational</a></h4>
 				<h6>By an <a href="#">admin</a>, Oct-2016</h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
@@ -229,7 +229,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</div>
 		<div class="col-md-4 eve-agile e2">
 			<div class="eve-sub1">
-				<a href="#" data-toggle="modal" data-target="#myModal6"><img src="images/e1.jpg" alt="image"></a>
+				<a href="#" data-toggle="modal" data-target="#myModal6"><img src="<?php echo base_url() ?>assets/images/e1.jpg" alt="image"></a>
 				<h4><a href="#" data-toggle="modal" data-target="#myModal6">Educational</a></h4>
 				<h6>By an <a href="#">admin</a>, Oct-2016</h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
@@ -247,7 +247,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</div>
 		<div class="col-md-4 eve-agile e3">
 			<div class="eve-sub1">
-				<a href="#" data-toggle="modal" data-target="#myModal7"><img src="images/e3.jpg" alt="image"></a>
+				<a href="#" data-toggle="modal" data-target="#myModal7"><img src="<?php echo base_url() ?>assets/images/e3.jpg" alt="image"></a>
 				<h4><a href="#" data-toggle="modal" data-target="#myModal7">Educational</a></h4>
 				<h6>By an <a href="#">admin</a>, Oct-2016</h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
