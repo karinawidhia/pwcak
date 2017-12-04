@@ -118,7 +118,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<ul class="nav navbar-nav navbar-right">
 								<li><a href="<?php echo base_url(); ?>index.php/home" class="hvr-underline-from-center active">Home</a></li>
 								<li><a href="<?php echo base_url(); ?>index.php/course" class="hvr-underline-from-center active">Courses</a></li>
-								<li><a href="#services" class="hvr-underline-from-center scroll">QnA</a></li>
+								<li><a href="<?php echo base_url(); ?>index.php/qna" class="hvr-underline-from-center active">QnA</a></li>
 								<!-- <li><a href="#gallery" class="hvr-underline-from-center scroll">Gdjvb</a></li>
 								<li><a href="#team" class="hvr-underline-from-center scroll">Our Team</a></li>
 								<li><a href="#events" class="hvr-underline-from-center scroll">Events</a></li> -->

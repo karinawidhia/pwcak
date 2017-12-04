@@ -32,13 +32,32 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<div class="top-search-bar">
 		<div class="header-top-nav">
 			<ul>
+				<li><a href="#" data-toggle="modal" data-target="#myModal1"><i class="fa fa-envelope" aria-hidden="true"></i>NEWSLETTER</a></li>
 				<li><a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-key" aria-hidden="true"></i>LOGIN</a></li>
 				<li><a href="#" data-toggle="modal" data-target="#myModal4"><i class="fa fa-lock" aria-hidden="true"></i>REGISTER</a></li>
 			</ul>
 		</div>
 	</div>
 	<!-- Modal1 -->
-		
+		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" >
+					<div class="modal-dialog" role="document">
+						<div class="modal-content modal-info">
+							<div class="modal-header">
+								<button type="button" class="close w3l" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+							<h4>Subscribe Now</h4>
+							<!--newsletter-->
+							<div class="newsletter">
+							  <form action="#" method="post">
+								<input type="email" name="email" size="30" required="" placeholder="Please fill your email" />
+								<input type="submit" value="Subscribe" />
+							  </form>
+							</div>
+						<!--//newsletter-->			
+						</div>
+					</div>
+				</div>
+		</div>
+			<div class="clearfix"></div>
 
 	<!-- //Modal1 -->
 
@@ -91,7 +110,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</div>
 			 </div>
 			<div class="clearfix"></div>
-	
+	<!-- //Modal4-->
+				<!-- <div class="search">
+						<form action="#" method="post">
+							<input type="search" placeholder="Search Here..." required="" />
+							<input type="submit" value=" ">
+						</form>
+				</div> -->
+					<div class="clearfix"></div>
+	<!--//top-bar-->
 	<!-- navigation -->
 			<div class ="top-nav">
 				<nav class="navbar navbar-default">
@@ -120,45 +147,97 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</nav>
 			</div>
 	<!-- //navigation -->
-
 	<div class="header">
+		<!-- Slider -->
+			<div class="slider">
 				<div class="callbacks_container">
-					<ul class="rslides" id="">
+					<ul class="rslides" id="slider">
 						<li>
 						
 							<div class="slider-info">
-								<p>find your passion</p>
+								<p>Question and Answer</p>
+								<p>for  discuss and boost our knowledge</p>
+								<!-- <h3><a href="index.html"><span>Edu</span> cational</a></h3> -->
+								<!-- <h6>wisdom begins with wonder.</h6> -->
+								
+							</div>
+
+							<div class="container">
+							    <div class="row">
+							        <div class="col-sm-6 col-sm-offset-3">
+							            <div id="imaginary_container"> 
+							                <div class="input-group stylish-input-group input-append">
+							                    <input type="text" class="form-control"  placeholder="Search" >
+							                    <span class="input-group-addon">
+							                        <button type="submit">
+							                            <span class="glyphicon glyphicon-search"></span>
+							                        </button>  
+							                    </span>
+							                </div>
+							            </div>
+							        </div>
+								</div>
+							</div>
+
+							<!-- <div class="container">
+								<div class="row">
+							        <div class="span12">
+							            <form id="custom-search-form" class="form-search form-horizontal pull-right">
+							                <div class="input-append span12">
+							                    <input type="text" class="search-query" placeholder="Search">
+							                    <button type="submit" class="btn"><i class="icon-search"></i></button>
+							                </div>
+							            </form>
+							        </div>
+								</div>
+							</div> -->
+
+						</li>
+						<!-- <li>
+						
+							<div class="slider-info">
+								<p>Education is a vaccine for violence.</p>
 								<h3><a href="index.html"><span>Edu</span> cational</a></h3>
-								<h6>place where you get lesson</h6>
+								<h6>wisdom begins with wonder.</h6>
+							</div>
+						</li> -->
+						<!-- <li>
+						
+							<div class="slider-info">
+								<p>wisdom begins with wonder.</p>
+								<h3><a href="index.html"><span>Edu</span> cational</a></h3>
+								<h6>wisdom begins with wonder.</h6>
 							</div>
 						</li>
+						<li>
+						
+							<div class="slider-info">
+								<p>Learning never exhausts the mind.</p>
+								<h3><a href="index.html"><span>Edu</span> cational</a></h3>
+								<h6>wisdom begins with wonder.</h6>
+							</div>
+						</li> -->
 							
 					</ul>
 				</div>
 				<div class="clearfix"></div>
+			</div>
+		<!-- //Slider -->
 	</div>
+
+	
 </div>
 <!--main-content-->
 
-					<div class="clearfix"></div>
 
-<!-- courses -->
+<!-- Popular courses -->
 <div class="event" id="events">
 	<div class="container">
-
-
-		<div class="input-group custom-search-form">
-				<form action="#" method="post">
-					<input type="search" placeholder="Search Here..." required="" />
-					<input type="submit" value=" ">
-				</form>
-		</div>
-
-		<h3 style="text-align: left;">COURSES</h3>
+		<h3 style="text-align: left;text-transform: uppercase;">Popular Q & A</h3>
 		<div class="col-md-4 eve-agile e1">
 			<div class="eve-sub1">
-				<a href="#" data-toggle="modal" data-target="#myModal5"><img src="images/e2.jpg" alt="image"></a>
-			<h4><a href="#" data-toggle="modal" data-target="#myModal5">Educational</a></h4>
+				<!-- <a href="#" data-toggle="modal" data-target="#myModal5"><img src="images/e2.jpg" alt="image"></a> -->
+			<h4><a href="#" data-toggle="modal" data-target="#myModal5">Pertanyaan?</a></h4>
 				<h6>By an <a href="#">admin</a>, Oct-2016</h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
 			</div>
@@ -175,8 +254,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</div>
 		<div class="col-md-4 eve-agile e2">
 			<div class="eve-sub1">
-				<a href="#" data-toggle="modal" data-target="#myModal6"><img src="images/e1.jpg" alt="image"></a>
-				<h4><a href="#" data-toggle="modal" data-target="#myModal6">Educational</a></h4>
+				<!-- <a href="#" data-toggle="modal" data-target="#myModal6"><img src="images/e1.jpg" alt="image"></a> -->
+				<h4><a href="#" data-toggle="modal" data-target="#myModal6">Pertanyaan</a></h4>
 				<h6>By an <a href="#">admin</a>, Oct-2016</h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
 			</div>
@@ -193,62 +272,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</div>
 		<div class="col-md-4 eve-agile e3">
 			<div class="eve-sub1">
-				<a href="#" data-toggle="modal" data-target="#myModal7"><img src="images/e3.jpg" alt="image"></a>
-				<h4><a href="#" data-toggle="modal" data-target="#myModal7">Educational</a></h4>
-				<h6>By an <a href="#">admin</a>, Oct-2016</h6>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-			</div>
-			<div class="eve-sub2">
-				<div class="eve-w3lleft">
-					<h6><i class="fa fa-comment-o" aria-hidden="true"></i>47</h6>
-					<h6><i class="fa fa-heart-o" aria-hidden="true"></i>58</h6>
-				</div>	
-				<div class="eve-w3lright">
-					<a href="#" data-toggle="modal" data-target="#myModal7"><h5>More</h5></a>
-				</div>
-				<div class="clearfix"></div>	
-			</div>
-		</div>
-		<div class="col-md-4 eve-agile e1">
-			<div class="eve-sub1">
-				<a href="#" data-toggle="modal" data-target="#myModal5"><img src="images/e2.jpg" alt="image"></a>
-			<h4><a href="#" data-toggle="modal" data-target="#myModal5">Educational</a></h4>
-				<h6>By an <a href="#">admin</a>, Oct-2016</h6>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-			</div>
-			<div class="eve-sub2">
-				<div class="eve-w3lleft">
-					<h6><i class="fa fa-comment-o" aria-hidden="true"></i>17</h6>
-					<h6><i class="fa fa-heart-o" aria-hidden="true"></i>78</h6>
-				</div>	
-				<div class="eve-w3lright e1">
-					<a href="#" data-toggle="modal" data-target="#myModal5"><h5>More</h5></a>
-				</div>
-				<div class="clearfix"></div>	
-			</div>
-		</div>
-		<div class="col-md-4 eve-agile e2">
-			<div class="eve-sub1">
-				<a href="#" data-toggle="modal" data-target="#myModal6"><img src="images/e1.jpg" alt="image"></a>
-				<h4><a href="#" data-toggle="modal" data-target="#myModal6">Educational</a></h4>
-				<h6>By an <a href="#">admin</a>, Oct-2016</h6>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
-			</div>
-			<div class="eve-sub2">
-				<div class="eve-w3lleft">
-					<h6><i class="fa fa-comment-o" aria-hidden="true"></i>64</h6>
-					<h6><i class="fa fa-heart-o" aria-hidden="true"></i>86</h6>
-				</div>	
-				<div class="eve-w3lright">
-					<a href="#" data-toggle="modal" data-target="#myModal6"><h5>More</h5></a>
-				</div>
-				<div class="clearfix"></div>	
-			</div>
-		</div>
-		<div class="col-md-4 eve-agile e3">
-			<div class="eve-sub1">
-				<a href="#" data-toggle="modal" data-target="#myModal7"><img src="images/e3.jpg" alt="image"></a>
-				<h4><a href="#" data-toggle="modal" data-target="#myModal7">Educational</a></h4>
+				<!-- <a href="#" data-toggle="modal" data-target="#myModal7"><img src="images/e3.jpg" alt="image"></a> -->
+				<h4><a href="#" data-toggle="modal" data-target="#myModal7">Pertanyaan</a></h4>
 				<h6>By an <a href="#">admin</a>, Oct-2016</h6>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
 			</div>
@@ -265,6 +290,62 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		</div>
 	</div>
 </div>
+
+						<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" >
+							<div class="modal-dialog">
+							<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4>Educational</h4>
+											<img src="images/e2.jpg" alt="blog-image" />
+											<span>Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem , eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.accusantium doloremque laudantium.</span>
+									</div>
+								</div>
+						
+							</div>
+				       </div>
+					   <!-- //Modal1 -->
+						<div class="modal fade" id="myModal6" tabindex="-1" role="dialog" >
+							<div class="modal-dialog">
+							<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4>Educational</h4>
+											<img src="images/e1.jpg" alt="blog-image" />
+											<span>Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem , eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.accusantium doloremque laudantium.</span>
+									</div>
+								</div>
+						
+							</div>
+				       </div>
+
+					   <!-- //Modal1 -->
+						<div class="modal fade" id="myModal7" tabindex="-1" role="dialog" >
+							<div class="modal-dialog">
+							<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+											<h4>Educational</h4>
+											<img src="images/e3.jpg" alt="blog-image" />
+											<span>Lorem ipsum dolor sit amet, Sed ut perspiciatis unde omnis iste natus error sit voluptatem , eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.accusantium doloremque laudantium.</span>
+									</div>
+								</div>
+						
+							</div>
+				       </div>
+					   <!-- //Modal1 -->
+
+<!-- //popular courses -->
+
+<!-- Top User -->
+
+<!--//Top User-->
+
+<!-- courses -->
+
 
 <!-- //courses -->
 
@@ -281,10 +362,13 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 			<div class="col-md-4 agileinfo_footer_grid mid-w3l nav2">
 				<h4>Options</h4>
 				<ul>
-					<li><a href="<?php echo base_url(); ?>index.php/home" class="active">Home</a></li>
-					<li><a href="<?php echo base_url(); ?>index.php/course" class="active">Course</a></li>
-					<li><a href="#services" class="scroll">QnA</a></li>
-					<li><a href="#gallery" class="scroll">My Account</a></li>
+					<li><a href="#home" class="scroll">Home</a></li>
+					<li><a href="#about" class="scroll">About Us</a></li>
+					<li><a href="#services" class="scroll">Services</a></li>
+					<li><a href="#gallery" class="scroll">Gallery</a></li>
+					<li><a href="#team" class="scroll">Team</a></li>
+					<li><a href="#events" class="scroll">Events</a></li>
+					<li><a href="#testimonials" class="scroll">Testimonials</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4 agileinfo_footer_grid">
@@ -296,10 +380,10 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</ul>
 			</div>
 			
-			<!-- <div class="clearfix"> </div>
+			<div class="clearfix"> </div>
 			<div class="w3agile_footer_copy">
 				<p>© 2017 Educational. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts.</a></p>
-			</div> -->
+			</div>
 		</div>
 	</div>
 
