@@ -25,6 +25,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
 <!-- //online-fonts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.min.css">
+
 </head>
 <body>
 <div class="main-w3layouts" id="home">
@@ -51,10 +54,10 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<h4>Login Your Account</h4>
 							<!--newsletter-->
 							<div class="login-main wthree">
-							  <form action="#" method="post">
-								<input type="email" placeholder="Email" required="" name="Email">
-								<input type="password" placeholder="Password" name="Password">
-								<input type="submit" value="Login">
+							  <form action="<?php echo base_url(); ?>index.php/auth/login" method="post" enctype="multipart/form-data">
+								<input type="email" placeholder="Email" required="" name="email">
+								<input type="password" placeholder="Password" name="password">
+								<input type="submit" name="submit" value="Login">
 							</form>
 							</div>
 						<!--//newsletter-->			
@@ -76,11 +79,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<!--newsletter-->
 							<div class="login-main wthree">
 							<form action="#" method="post">
-								<input type="text" placeholder="Name" name="Name">
-								<input type="email" placeholder="Email" required="" name="Email">
-								<input type="password" placeholder="Password" name="Password">
-								<input type="password" placeholder="Confirm Password" name="Password">
-								<input type="text" placeholder="Phone Number" name="Number">
+								<input type="text" placeholder="Name" name="name">
+								<input type="email" placeholder="Email" required="" name="email">
+								<input type="password" placeholder="Password" name="password">
+								<input type="password" placeholder="Confirm Password" name="c_password">
+								<input type="text" placeholder="City" name="City">
 								<input type="submit" value="Register Now">
 							</form>
 							</div>
@@ -252,6 +255,18 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!-- //smooth scrolling -->
 	<!--// bottom-top -->
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bootstrap-3.1.1.min.js"></script>
+
+						<?php if ($this->session->flashdata('notif')): ?>
+                            <script>
+                                swal({
+                                    title: "Authentication",
+                                    text: "<?php echo $this->session->flashdata('flash_message'); ?>",
+                                    timer: 1500,
+                                    showConfirmButton: false,
+                                    type: 'success'
+                                });
+                            </script>
+                    <?php endif; ?>
 
 </body>
 <!-- </div>
