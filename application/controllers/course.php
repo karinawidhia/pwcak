@@ -5,7 +5,8 @@ class Course extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('course_view');
+		$data['main_view'] = 'course_view';
+		$this->load->view('template', $data);
 	}
 
 }

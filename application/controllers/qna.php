@@ -5,7 +5,8 @@ class Qna extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('qna_view');
+		$data['main_view'] = 'qna_view';
+		$this->load->view('template', $data);
 	}
 
 }
