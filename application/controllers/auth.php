@@ -22,11 +22,11 @@ class Auth extends CI_Controller {
 
                 if ($this->form_validation->run() == TRUE ) {
                     
-                    if ($this->auth_model->authentication() == "TRUE") {
-                        // $this->session->set_flashdata('notif', 'Anda telah berhasil login, selamat belajar !');
+                    if ($this->auth_model->authentication() == TRUE) {
+                        $this->session->set_flashdata('notif', 'Anda telah berhasil login, selamat belajar !');
                         redirect('home');
                     } else {
-                        // $this->session->set_flashdata('notif', 'Email atau Password anda tidak valid, coba lagi');
+                        $this->session->set_flashdata('notif', 'Email atau Password anda tidak valid, coba lagi');
                         redirect('home');
                     }
                 } else {
@@ -35,6 +35,11 @@ class Auth extends CI_Controller {
                 }
 	}
 }
+	
+	 	public function logout() {
+        $this->session->sess_destroy();
+        redirect('home');
+    }
 
 
 

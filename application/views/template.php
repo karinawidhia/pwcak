@@ -34,9 +34,21 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!--top-bar-->
 	<div class="top-search-bar">
 		<div class="header-top-nav">
+
 			<ul>
+				<?php 
+				if ($this->session->userdata('logged_in') == TRUE) {
+					
+				 ?>
+				<li><a href="<?php echo base_url() ?>index.php/auth/logout" ><i class="fa fa-close" aria-hidden="true"></i>LOGOUT</a></li>
+				<?php 
+				}
+				else { ?>
+				
 				<li><a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-key" aria-hidden="true"></i>LOGIN</a></li>
 				<li><a href="#" data-toggle="modal" data-target="#myModal4"><i class="fa fa-lock" aria-hidden="true"></i>REGISTER</a></li>
+				
+				<?php } ?>
 			</ul>
 		</div>
 	</div>
@@ -260,7 +272,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
                             <script>
                                 swal({
                                     title: "Authentication",
-                                    text: "<?php echo $this->session->flashdata('flash_message'); ?>",
+                                    text: "<?php echo $this->session->flashdata('notif'); ?>",
                                     timer: 1500,
                                     showConfirmButton: false,
                                     type: 'success'

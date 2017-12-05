@@ -6,11 +6,12 @@ class Auth_model extends CI_Model {
 	
 	public function authentication(){
         $email = $this->input->post('email');
+        $password = $this->input->post('password');
         $role = $this->GetUser(['email'=>$email])->row('role');
         $id = $this->GetUser(['email'=>$email])->row('id_user');
         
 
-        $query = $this->GetUser(['email'=>$email,'password'=>md5($password)]);
+        $query = $this->GetUser(['email'=>$email,'password'=>$password]);
         if ($query->num_rows() > 0) {
             $data = [
                 'logged_id'     => $id,
@@ -18,10 +19,10 @@ class Auth_model extends CI_Model {
                 'logged_in'     => TRUE
             ];
             $this->session->set_userdata( $data );
-            return "TRUE";
+            return TRUE;
         } 
          else {
-            return "FALSE";
+            return FALSE;
         }
     }
 
