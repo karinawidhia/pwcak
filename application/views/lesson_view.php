@@ -261,6 +261,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 			(the extra small to small range) 
 		 			before becoming horizontal on desktop (medium) devices. Place grid columns in any <code>.row</code>.</p>
 				</div>
+				<div style="text-align: right; padding-right: 35px">
+					<button type="submit" class="btn btn-danger">Next</button>	
+				</div>
 				<!----> 		
 			</div>
 		</div>

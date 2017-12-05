@@ -172,8 +172,11 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 								<div>
 									<h3> Nama </h3>
-									<h6>Bio.</h6>
-									<p>City, Nation</p>
+									<h4>Bio.</h4>
+									<h4>City, Nation</h4>
+									<br/> <br/> <br/>
+									<button class="btn btn-default"><a href="#" data-toggle="modal" data-target="#myModal99"><i class="fa fa-pencil"></i>Edit Account</a></button>
+									<button class="btn btn-default"><a href="#" data-toggle="modal" data-target=""><i class="fa fa-plus"></i>Follow</a></button>
 								</div>
 								
 							</div>
@@ -188,7 +191,6 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 		<!-- //Slider -->
 	</div>
 
-	<button class="btn-danger"><a href="#" data-toggle="modal" data-target="#myModal99">Edit Account</a></button>
 
 	<!-- Modal99 -->
 		<div class="modal fade" id="myModal99" tabindex="-1" role="dialog" >
