@@ -25,30 +25,15 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
 <!-- //online-fonts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.min.css">
-
 </head>
 <body>
 <div class="main-w3layouts" id="home">
 	<!--top-bar-->
 	<div class="top-search-bar">
 		<div class="header-top-nav">
-
 			<ul>
-				<?php 
-				if ($this->session->userdata('logged_in') == TRUE) {
-					
-				 ?>
-				<li><a href="<?php echo base_url() ?>index.php/auth/logout" ><i class="fa fa-close" aria-hidden="true"></i>LOGOUT</a></li>
-				<?php 
-				}
-				else { ?>
-				
 				<li><a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-key" aria-hidden="true"></i>LOGIN</a></li>
 				<li><a href="#" data-toggle="modal" data-target="#myModal4"><i class="fa fa-lock" aria-hidden="true"></i>REGISTER</a></li>
-				
-				<?php } ?>
 			</ul>
 		</div>
 	</div>
@@ -66,10 +51,10 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<h4>Login Your Account</h4>
 							<!--newsletter-->
 							<div class="login-main wthree">
-							  <form action="<?php echo base_url(); ?>index.php/auth/login" method="post" enctype="multipart/form-data">
-								<input type="email" placeholder="Email" required="" name="email">
-								<input type="password" placeholder="Password" name="password">
-								<input type="submit" name="submit" value="Login">
+							  <form action="#" method="post">
+								<input type="email" placeholder="Email" required="" name="Email">
+								<input type="password" placeholder="Password" name="Password">
+								<input type="submit" value="Login">
 							</form>
 							</div>
 						<!--//newsletter-->			
@@ -90,13 +75,14 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<h4>Register Now</h4>
 							<!--newsletter-->
 							<div class="login-main wthree">
-							<form action="#" method="post">
+							<form action="<?php echo base_url(); ?>index.php/register/submit_user" method="post">
 								<input type="text" placeholder="Name" name="name">
 								<input type="email" placeholder="Email" required="" name="email">
+								<input type="text" name="username" placeholder="Username">
 								<input type="password" placeholder="Password" name="password">
-								<input type="password" placeholder="Confirm Password" name="c_password">
-								<input type="text" placeholder="City" name="City">
-								<input type="submit" value="Register Now">
+								<input type="text" placeholder="City" name="city">
+								<input type="text" name="bio" placeholder="Bio">
+								<input type="submit" value="Register Now" name="submit">
 							</form>
 							</div>
 						<!--//newsletter-->			
@@ -142,9 +128,9 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 				</nav>
 			</div>
 	<!-- //navigation -->
-
+							
 	<?php $this->load->view($main_view); ?>
-
+u
 	<!-- footer -->
 	<div class="footer" id="footer">
 		<div class="container">
@@ -154,7 +140,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					fugiat nulla pariatur. <span>Excepteur sint occaecat cupidatat non proident 
 					sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
 			</div>
-			<div class="col-md-4 agileinfo_footer_grid mid-w3l nav2">
+		<div class="col-md-4 agileinfo_footer_grid mid-w3l nav2">
 				<h4>Options</h4>
 				<ul>
 					<li><a href="#home" class="scroll">Home</a></li>
@@ -165,7 +151,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 					<li><a href="#events" class="scroll">Events</a></li>
 					<li><a href="#testimonials" class="scroll">Testimonials</a></li>
 				</ul>
-			</div>
+		</div>
 			<div class="col-md-4 agileinfo_footer_grid">
 				<h4>Address</h4>
 				<ul>
@@ -267,18 +253,6 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!-- //smooth scrolling -->
 	<!--// bottom-top -->
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bootstrap-3.1.1.min.js"></script>
-
-						<?php if ($this->session->flashdata('notif')): ?>
-                            <script>
-                                swal({
-                                    title: "Authentication",
-                                    text: "<?php echo $this->session->flashdata('notif'); ?>",
-                                    timer: 1500,
-                                    showConfirmButton: false,
-                                    type: 'success'
-                                });
-                            </script>
-                    <?php endif; ?>
 
 </body>
 <!-- </div>
