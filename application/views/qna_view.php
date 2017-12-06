@@ -99,7 +99,7 @@
 					<h6><i class="fa fa-heart-o" aria-hidden="true"></i>78</h6>
 				</div>	
 				<div class="eve-w3lright e1">
-					<a href="#" data-toggle="modal" data-target="#myModal5"><h5>More</h5></a>
+					<a href="<?php echo base_url(); ?>index.php/answer" data-toggle="" data-target=""><h5>More</h5></a>
 				</div>
 				<div class="clearfix"></div>	
 			</div>
@@ -117,7 +117,7 @@
 					<h6><i class="fa fa-heart-o" aria-hidden="true"></i>86</h6>
 				</div>	
 				<div class="eve-w3lright">
-					<a href="#" data-toggle="modal" data-target="#myModal6"><h5>More</h5></a>
+					<a href="<?php echo base_url(); ?>index.php/answer" data-toggle="" data-target=""><h5>More</h5></a>
 				</div>
 				<div class="clearfix"></div>	
 			</div>
@@ -135,7 +135,7 @@
 					<h6><i class="fa fa-heart-o" aria-hidden="true"></i>58</h6>
 				</div>	
 				<div class="eve-w3lright">
-					<a href="#" data-toggle="modal" data-target="#myModal7"><h5>More</h5></a>
+					<a href="<?php echo base_url(); ?>index.php/answer" data-toggle="" data-target=""><h5>More</h5></a>
 				</div>
 				<div class="clearfix"></div>	
 			</div>

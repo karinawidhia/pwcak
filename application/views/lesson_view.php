@@ -264,6 +264,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div style="text-align: right; padding-right: 35px">
 					<button type="submit" class="btn btn-danger">Next</button>	
 				</div>
+
+				 <div class="btn-group">
+                                <a class="btn btn-default"><i class="fa fa-angle-left"></i></a>
+                                <a class="btn btn-default"><i class="fa fa-angle-right"></i></a>
+                            </div>
 				<!----> 		
 			</div>
 		</div>
