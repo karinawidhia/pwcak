@@ -25,6 +25,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
 <!-- //online-fonts -->
+
 </head>
 <body>
 <div class="main-w3layouts" id="home">
@@ -232,6 +233,49 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- post courses -->
 <div class="event" id="events">
 	<div class="container">
+
+	<div class="btn-group">
+		<a class="btn btn-danger" data-toggle="modal" data-target="#modalpost"><i class="fa fa-plus"></i> </a>
+		<a class="btn btn-danger" data-toggle="modal" data-target="#modalpost">Add Post </a>
+	</div>
+
+	<div class="modal fade" id="modalpost" tabindex="-1" role="dialog" >
+		<div class="modal-dialog" role="document">
+			<!-- Modal content-->
+			<div class="modal-content news-w3l">
+				<div class="modal-header">
+							<button type="button" class="close w3l" data-dismiss="modal">&times;</button>
+							<h4>Add New Course</h4>
+							<!--newsletter-->
+							<div class="login-main wthree">
+							<form action="#" method="post">
+								Course Name 
+								<input type="text" class="form-control">
+								Subject 
+								<select class="form-control">
+									<option value="dummy1">Dummy1</option>
+									<option value="dummy2">Dummy2</option>
+									<option value="dummy3">Dummy3</option>
+									<option value="dummy4">Dummy4</option>
+								</select>
+							<!-- <label for="file-upload" class="custom-file-upload ">
+    						<span class="glyphicon glyphicon-upload"></span>  Upload Thumbnail
+							</label> -->
+								<br/>
+								Choose Thumbnail
+								<input id="file-upload" type="file" class="form-control"/>
+							
+								<input type="submit" value="Create Now">
+							</form>
+							</div>
+						<!--//newsletter-->			
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+		
+
 		<h3 style="text-align: left;">My Courses</h3>
 		<div class="col-md-4 eve-agile e1">
 			<div class="eve-sub1">
