@@ -8,7 +8,7 @@ class Home extends CI_Controller {
 		$data['main_view'] = 'home_view';
 		$this->load->view('template', $data);
 	}
-
+	
 }
 
 /* End of file controllername.php */
