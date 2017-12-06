@@ -1,9 +1,3 @@
-<!--
-	Author: W3layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,15 +19,30 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
 <!-- //online-fonts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.min.css">
+
 </head>
 <body>
 <div class="main-w3layouts" id="home">
 	<!--top-bar-->
 	<div class="top-search-bar">
 		<div class="header-top-nav">
+
 			<ul>
+				<?php 
+				if ($this->session->userdata('logged_in') == TRUE) {
+					
+				 ?>
+				<li><a href="<?php echo base_url() ?>auth/logout" ><i class="fa fa-close" aria-hidden="true"></i>LOGOUT</a></li>
+				<?php 
+				}
+				else { ?>
+				
 				<li><a href="#" data-toggle="modal" data-target="#myModal3"><i class="fa fa-key" aria-hidden="true"></i>LOGIN</a></li>
 				<li><a href="#" data-toggle="modal" data-target="#myModal4"><i class="fa fa-lock" aria-hidden="true"></i>REGISTER</a></li>
+				
+				<?php } ?>
 			</ul>
 		</div>
 	</div>
@@ -51,10 +60,10 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<h4>Login Your Account</h4>
 							<!--newsletter-->
 							<div class="login-main wthree">
-							  <form action="#" method="post">
-								<input type="email" placeholder="Email" required="" name="Email">
-								<input type="password" placeholder="Password" name="Password">
-								<input type="submit" value="Login">
+							  <form action="<?php echo base_url(); ?>auth/login" method="post" enctype="multipart/form-data">
+								<input type="email" placeholder="Email" required="" name="email">
+								<input type="password" placeholder="Password" name="password">
+								<input type="submit" name="submit" value="Login">
 							</form>
 							</div>
 						<!--//newsletter-->			
@@ -75,7 +84,7 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 							<h4>Register Now</h4>
 							<!--newsletter-->
 							<div class="login-main wthree">
-							<form action="<?php echo base_url(); ?>index.php/register/submit_user" method="post">
+							<form action="<?php echo base_url(); ?>auth/submit_user" method="post">
 								<input type="text" placeholder="Name" name="name">
 								<input type="email" placeholder="Email" required="" name="email">
 								<input type="text" name="username" placeholder="Username">
@@ -115,22 +124,22 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 						<!-- navbar-header -->
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-right">
-								<li><a href="<?php echo base_url(); ?>index.php/home" class="hvr-underline-from-center active">Home</a></li>
-								<li><a href="<?php echo base_url(); ?>index.php/course" class="hvr-underline-from-center active">Courses</a></li>
-								<li><a href="<?php echo base_url(); ?>index.php/qna" class="hvr-underline-from-center active">QnA</a></li>
+								<li><a href="<?php echo base_url(); ?>home" class="hvr-underline-from-center active">Home</a></li>
+								<li><a href="<?php echo base_url(); ?>course" class="hvr-underline-from-center active">Courses</a></li>
+								<li><a href="<?php echo base_url(); ?>qna" class="hvr-underline-from-center active">QnA</a></li>
 								<!-- <li><a href="#gallery" class="hvr-underline-from-center scroll">Gdjvb</a></li>
 								<li><a href="#team" class="hvr-underline-from-center scroll">Our Team</a></li>
 								<li><a href="#events" class="hvr-underline-from-center scroll">Events</a></li> -->
-								<li><a href="<?php echo base_url(); ?>index.php/myaccount" class="hvr-underline-from-center active">MyAccount</a></li>
+								<li><a href="<?php echo base_url(); ?>myaccount" class="hvr-underline-from-center active">MyAccount</a></li>
 							</ul>
 						</div>
 						<div class="clearfix"> </div>	
 				</nav>
 			</div>
 	<!-- //navigation -->
-							
+
 	<?php $this->load->view($main_view); ?>
-u
+
 	<!-- footer -->
 	<div class="footer" id="footer">
 		<div class="container">
@@ -140,7 +149,7 @@ u
 					fugiat nulla pariatur. <span>Excepteur sint occaecat cupidatat non proident 
 					sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
 			</div>
-		<div class="col-md-4 agileinfo_footer_grid mid-w3l nav2">
+			<div class="col-md-4 agileinfo_footer_grid mid-w3l nav2">
 				<h4>Options</h4>
 				<ul>
 					<li><a href="#home" class="scroll">Home</a></li>
@@ -151,7 +160,7 @@ u
 					<li><a href="#events" class="scroll">Events</a></li>
 					<li><a href="#testimonials" class="scroll">Testimonials</a></li>
 				</ul>
-		</div>
+			</div>
 			<div class="col-md-4 agileinfo_footer_grid">
 				<h4>Address</h4>
 				<ul>
@@ -253,6 +262,30 @@ u
 	<!-- //smooth scrolling -->
 	<!--// bottom-top -->
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bootstrap-3.1.1.min.js"></script>
+
+						<?php if ($this->session->flashdata('notif_success')): ?>
+                            <script>
+                                swal({
+                                    title: "Success",
+                                    text: "<?php echo $this->session->flashdata('notif_success'); ?>",
+                                    timer: 1500,
+                                    showConfirmButton: false,
+                                    type: 'success'
+                                });
+                            </script>
+                    <?php endif; ?>
+                    <?php if ($this->session->flashdata('notif_failed')): ?>
+                            <script>
+                                swal({
+                                    title: "Failed",
+                                    text: "<?php echo $this->session->flashdata('notif_failed'); ?>",
+                                    timer: 1500,
+                                    showConfirmButton: false,
+                                    type: 'error'
+                                });
+                            </script>
+                    <?php endif; ?>
+
 
 </body>
 <!-- </div>
