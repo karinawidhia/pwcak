@@ -31,44 +31,7 @@
 								</div>
 							</div>
 
-							<!-- <div class="container">
-								<div class="row">
-							        <div class="span12">
-							            <form id="custom-search-form" class="form-search form-horizontal pull-right">
-							                <div class="input-append span12">
-							                    <input type="text" class="search-query" placeholder="Search">
-							                    <button type="submit" class="btn"><i class="icon-search"></i></button>
-							                </div>
-							            </form>
-							        </div>
-								</div>
-							</div> -->
-
 						</li>
-						<!-- <li>
-						
-							<div class="slider-info">
-								<p>Education is a vaccine for violence.</p>
-								<h3><a href="index.html"><span>Edu</span> cational</a></h3>
-								<h6>wisdom begins with wonder.</h6>
-							</div>
-						</li> -->
-						<!-- <li>
-						
-							<div class="slider-info">
-								<p>wisdom begins with wonder.</p>
-								<h3><a href="index.html"><span>Edu</span> cational</a></h3>
-								<h6>wisdom begins with wonder.</h6>
-							</div>
-						</li>
-						<li>
-						
-							<div class="slider-info">
-								<p>Learning never exhausts the mind.</p>
-								<h3><a href="index.html"><span>Edu</span> cational</a></h3>
-								<h6>wisdom begins with wonder.</h6>
-							</div>
-						</li> -->
 							
 					</ul>
 				</div>
