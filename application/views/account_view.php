@@ -25,6 +25,8 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&subset=latin-ext" rel="stylesheet">
 <link href="//fonts.googleapis.com/css?family=Covered+By+Your+Grace" rel="stylesheet">
 <!-- //online-fonts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.9.1/sweetalert2.min.css">
 
 </head>
 <body>
@@ -518,6 +520,29 @@ function hideURLbar(){ window.scrollTo(0,1); } </script>
 	<!-- //smooth scrolling -->
 	<!--// bottom-top -->
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bootstrap-3.1.1.min.js"></script>
+
+	<?php if ($this->session->flashdata('notif_success')): ?>
+                            <script>
+                                swal({
+                                    title: "Success",
+                                    text: "<?php echo $this->session->flashdata('notif_success'); ?>",
+                                    timer: 1500,
+                                    showConfirmButton: false,
+                                    type: 'success'
+                                });
+                            </script>
+                    <?php endif; ?>
+                    <?php if ($this->session->flashdata('notif_failed')): ?>
+                            <script>
+                                swal({
+                                    title: "Failed",
+                                    text: "<?php echo $this->session->flashdata('notif_failed'); ?>",
+                                    timer: 1500,
+                                    showConfirmButton: false,
+                                    type: 'error'
+                                });
+                            </script>
+                    <?php endif; ?>
 
 </body>
 </html>

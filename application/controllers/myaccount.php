@@ -35,7 +35,7 @@ class Myaccount extends CI_Controller {
 		}
 	}
 
-}
+	
 
 /* End of file myaccount.php */
 /* Location: ./application/controllers/myaccount.php */
